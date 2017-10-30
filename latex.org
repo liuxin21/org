@@ -1,0 +1,5 @@
+\begin{equation}
+x=\sqrt{b}
+\frac{a}{b}
+\alpha
+\end{equation}

@@ -1,0 +1,26 @@
+* 近期
+
+** DONE 把air的配置文件迁移
+   DEADLINE: <2017-10-29 Sun>
+** TODO air 装linux
+** TODO pro 远程控制
+** TODO 热力学整理
+** TODO 第二定律
+** TODO git 控制org
+** TODO Function space (p36)
+** DONE bilinear forms
+** DONE Alfred
+** TODO numpy
+** TODO 远程控制 linux
+** TODO 论文
+
+** TODO 把dropbox 第一篇写到主页上 
+
+
+* 长期
+** TODO 廖 python
+** TODO Linux
+
+
+
+

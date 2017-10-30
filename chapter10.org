@@ -1,0 +1,52 @@
+* chapter10
+
+** Recall: 1:1 salt, planar geometry, low potential approx
+psi = psi0 * exp(-k(c0)*x)
+
+more ions close to the surface:
+difference in osmotic pressure 渗透压
+
+** surface potential psi0
+measure the charge density (sigma)
+1. titration
+2. surface excess
+3. stoichiometry 化学计量
+
+** surface charge
+surface charge + charge in solution = 0
+therefore, sigma = -int rho dx
+回到之前的poisson: D(psi,x) = F(rho) 带入上式
+sigma = - epsilon d(psi,x=0)
+
+
+** Grahame equation
+(surface charge) sigma = epsilon * psi0 / d(c0)
+
+* chapter11
+
+** capacity 
+C = Q/psi
+CA = C/A = (Q/A)/psi = sigma / psi = epsilon / d(c0)
+
+对比普通的capacitor c = epsilon A / d
+说明：
+1. the electric double layer behaves like a plate capacitor
+2. the distance between the plates is given by the debye length
+
+
+** limitations of the pb theory
+
+1. the finite size of the ions is neglected (具体计算？)
+2. ions in solution 
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+** numpy 速度原理
+
+*** 多维array
+*** 多线程
+
+*** 不管几维的array，本质都是一个1D array
+
+在numpy中，创建2维array的默认方法是：‘c-type',以row为主在内存中排列
+‘Fortran', 以column为主排列
+

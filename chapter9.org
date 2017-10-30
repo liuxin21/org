@@ -1,0 +1,74 @@
+* charged interfaces
+
+** three mechanisms that lead to a charged surface
+
+*** adsorption
+1. h or oh 吸附在 insoluble oxides
+2. surfactants 吸附在 mineral particles, air/water interface
+
+*** dissociation
+注意是 surface group 的 ionization or dissociation
+1. -oh 变为 -o + h
+2. -cooh 变为 -coo + h
+(silica 玻璃的表面就是这样被 charged, -oh 在低ph时变为h, 在高ph时变为 -o)
+
+*** electrified surfaces
+在两金属间加电压
+
+
+** distribution of ionic charge (using pb equation)
+
+*** work (W)： 移动一个ion从无穷远到surface所用的能量
+*** ion的分布遵循Boltzmann分布：c = c^0 exp(-w/kbt)
+*** 一个 charged surface 造成 electric potential (psi) , 而 psi 决定了 w
+eg: 
+1. 把 Na+ 带到 potential 为 psi 的地方所用的功: W+ = e psi
+2. 把 Cl- 带到 potential 为 psi 的地方所用的功: W- = -e psi
+*** concentration c
+1. anions: c- = c0*exp(e*psi/kbt)
+2. cations: c+ = c0*exp(-e*psi/kbt)
+*** electric potential (psi)
+electric potential (psi) and charge density (rho) are related by Poisson equation
+有了Poisson equation，一旦charge distribution知道了, psi 就得出了 
+Delta psi = - rho_e / epsilon * epsilon0
+*** charge density rho_e
+
+
+
+** pb equation (for several limiting geometires and assumptions)
+
+** potential and ionic concentrations (changes as a function of distance from a charged surface)
+psi = k(c0)exp(x)
+
+
+* the electric double layer
+
+** notes
+
+*** water: 
+1. high dielectric constant
+2. good solvent for ions (surfaces in water are charged)
+
+*** 研究目标：
+the forces that exist between similarly and oppositely charged surfaces
+
+*** charged surfaces in an electrolyte (电解质)
+1. on the surface: charges are fixed
+2. in the electrolyte: charges are free to move around
+   
+*** Debye length 
+give us a ruler to measure the thickness of the electric double-layer
+d = 1/k(c0)
+
+*** 总结
+boltzmann: c(c0,w) = c(c0,psi)
+poisson: D(psi,x) = F(rho) = F(c) = F(c0,psi)
+求出： psi = psi0 exp(-k(c0)*x)
+也就是说，当x=d=1/k(c0)时，psi=psi0/e
+
+
+
+
+
+
+

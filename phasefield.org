@@ -1,0 +1,4 @@
+* phase field 
+
+one always has a non sharp or diffusice interface.
+

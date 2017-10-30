@@ -1,0 +1,220 @@
+* org-mode 教学
+
+** markup
+
+*Bold* /itlic/ =verbatim=  +strikethrough+ 
+
+- bulleted
+- list
+- items
+
+C-c C-l: 
+[[liuxin21.com][my website]]
+
+[[file:chapter7.org][chapter7]]
+[[file:chapter9.org][chapter9]]
+
+打开文件 c-c c-o
+
+** tables
+
+| some   | data  |
+|--------+-------|
+| fdssfd | fdsfd |
+| FDSFD  | FDSF  |
+
+调整顺序： m-up/down
+
+** export
+
+c-c c-e
+
+** LaTex 
+
+- \alpha \frac{a}{b}
+- $ \frac{a}{b} $
+
+
+** 列表
+- fsfd
+p- fdsfd
+
+1. dsfd
+
+* emacs 教学
+
+执行此行：c-x c-e
+执行全部：m-x eval-buffer
+文档开端: M-<
+文档结束: M->
+
+** 快捷键制定
+
+- 全局绑定 global-set-key
+eg: (global-set-key (kbd "C-j") 'goto-line)
+
+- 特定模式绑定 define-key
+eg: (define-key c++-mode-map (kbd "C-j") 'goto-line)
+
+* ubuntu 教学
+
+** 安装
+网址：[[https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-macos#0][教程]]
+
+* git 教学
+** 在这之前你应该掌握的知识
+- terminal 命令 (eg: cd ls)
+  
+** Repository
+repository 就是寄存文件的仓库，和普通的文件夹不同，它可以保存文件的历史记录
+
+简单来说，在init之后，这个文件夹(repository)里就会多出一个.git文件来记录
+repository里所有的文件或文件夹。
+
+*** init
+
+$ cd ~/desktop
+$ mkdir rep
+$ cd rep
+
+$ git config --global user.name "xxxx"
+$ git config --global user.email "xxxx"
+
+$ git init
+
+*** add
+
+$ touch 1.org
+
+$ git status
+
+$ git add 1.org
+
+*** commit
+
+$ git commit -m "create 1.org"
+
+** 记录log
+
+$ git log
+log长的话，输入q退出
+
+简介log: 
+$ git log --oneline
+
+** reset
+*** 回到add之前
+
+回顾上节：
+(untracked) -> git add -> (tracked) -> git commit
+
+add 完变成 staged 了又反悔，想加点内容再 add。
+git reset 可以使 staged 变成 unstaged
+
+$ git reset
+
+*** 回到commit之前
+每个 commit 都有自己的 id 数字号, 
+HEAD 是一个指针, 指引当前的状态是在哪个 commit
+
+$ git reset --hard HEAD
+
+$ git reset --hard HEAD^
+
+$ git reset --hard id数字
+
+$ git reflog
+
+** 分支brach
+我们之前的文件当中, 仅仅只有一条 master 分支,
+
+$ git branch b1
+
+$ git branch
+
+$ git checkout b1
+
+直接创建并切换：
+$ git checkout -b b2
+
+切换到 master, 再将 b2 推送过来
+$ git checkout master   # 切换至 master 才能把其他分支合并过来
+$ git merge b2         # 将 dev merge 到 master 中
+
+** github
+$ git remote add origin 你的github的ssd
+
+$ git push -u origin master     # 推送本地 master 去 origin
+$ git push -u origin dev        # 推送本地 dev  去 origin
+
+** 创建多个ssh
+
+*** 基本信息：
+用户名1：liuxin21
+注册邮箱1：x399liu@edu.uwaterloo.ca
+
+用户名2: xin6liu
+注册邮箱2: xin6liu@gmail.com
+
+*** 创建.ssh 文件夹, 并转到.ssh 
+#+BEGIN_SRC shell
+$ mkdir .ssh
+$ cd .ssh
+#+END_SRC
+
+*** 生成两个 ssh key
+#+BEGIN_SRC  
+$ ssh-keygen -t rsa -C "邮箱1"
+$ ssh-keygen -t rsa -C "邮箱2"
+#+END_SRC 
+- 输入你的用户名1和用户名2
+- 输入密码
+
+*** 复制密钥到github
+- 打开.pub，并复制里面内容
+- 打开github->settings->ssh keys 粘贴
+
+*** 把key加到ssh agent上
+由于不是使用默认的.ssh/id\_rsa，
+所以你需要告诉ssh agent你的新key的位置
+- 链接你的key文件，名字取用户名
+#+BEGIN_SRC 
+ $ ssh-add ~/.ssh/用户名
+#+END_SRC
+
+- 查看 ssh 列表
+#+BEGIN_SRC 
+ $ ssh-add -l
+#+END_SRC
+
+*** 配置.ssh/config
+#+BEGIN_SRC 
+$ touch config
+#+END_SRC
+- 编辑 config:
+#+BEGIN_SRC 
+    Host liuxin21.github.com
+    HostName github.com
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/liuxin21
+#+END_SRC
+
+*** 测试配置是否正确
+#+BEGIN_SRC 
+ssh git@liuxin21.github.com
+#+END_SRC
+
+*** 克隆
+#+BEGIN_SRC 
+$ git clone git@xin6liu.github.com:xin6liu/test.git
+#+END_SRC
+*** 信息
+#+BEGIN_SRC 
+$ git config user.name “xin6liu”; 
+$ git config user.email “xin6liu@gmail.com"/test.git
+#+END_SRC
+
+
+
+
+

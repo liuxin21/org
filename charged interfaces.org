@@ -1,0 +1,23 @@
+* electrocapillarity
+
+classical electrocapillary experiment:
+the change of interfacial tension 
+at a metal-electrolyte interface (金属-电解质 界面)
+由 applied potential 决定。
+
+接触 electrolyte 的 mercury drop 的形状
+由 electric potential 决定。
+
+Lippmann 实验了这个 electrocapillarity effect.
+计算了 interfacial tension ~ applied potential.
+
+
+
+
+
+
+
+
+
+
+

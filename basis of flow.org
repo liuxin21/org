@@ -1,0 +1,7 @@
+* 读这篇文章前你应该知道的知识
+
+- Navier-Stokes equation
+- Scaled equations (dimensionless equaiton)
+- Weak formulation
+- *Function spaces* 
+- 

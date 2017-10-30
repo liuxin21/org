@@ -1,0 +1,65 @@
+* interfacial thermodynamics
+
+
+** 给出一个system, 选择合适的 thermodynamics potentials
+1. internal energy U
+2. enthalpy H
+3. helmholtz free energy F
+4. gibbs free energy G
+选择合适的potentials, 使用experimentally measurable variables
+来表示相关的性质。
+
+
+* gibb's dividing surface
+
+extensive properties: U,N,S
+intensive properties: T,P
+
+所以 U,N,S 需要各部分相加
+
+
+* interfacial excess
+
+** equation
+eqn. 3.17: the freee energy is minimal:
+constant volume, temperature, and constant amounts of material.
+The chemical potentials in the three phases are equal.
+eqn.3.20: dF= dv^beta, dA, dN(total)
+surface tension: 当surface area增加时，free energy F 是怎样改变的。 (constant T,V,Vb,N)
+keeping the temperature, the total volume, the volume of phase beta and the total number 不变.
+eqn.3.26: surface tension  
+the increase in the gibbs free energy per increase in surface area at constant T, P, N
+
+** interfacial excess quantites
+之前都是 total energy quantities of the system
+现在考虑 interfacial excess quantities, 也就是sigma分量
+
+3.28: U^sigma = T*S^sigma + mu_i*N_i^sigma + gamma*A
+3.29: F^sigma =             mu_i*N_i^sigma + gamma*A
+
+
+** the surface tension of pure liquids
+surface tension -- surface excess quantities
+3.29/A 可以得到 N_i^sigma/A， 也就是 Gamma (interfacial excess)
+对于pure liquids (i = 1), 我们选择gibbs dividing plane 使 Gamma = 0 
+所以，此时 surface tenison 就等于 free surface energy per area.
+
+
+
+* gibb's adsorption isotherm
+** 利用gibb's adsorption isotherm, 联系 changes in surface tension 和 concentrations
+
+eqn. 3.52
+由 tension和concentration 的数据可以求出 surface concentration (interfacial excess)
+** Marangoni effect 背后的 mechanism
+
+
+
+
+
+
+
+
+
+
+

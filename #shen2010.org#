@@ -1,0 +1,45 @@
+** Time discretizations and their stability analysis
+
+construct time discretization schemes 
+which satisfy a discrete energy law (类似于2.21)
+
+采用 Allen-Cahn phase-field system 5-10-18:
+
+$$ \frac{\partial \phi}{\partial \t} + v \cdot \Delta v 
+= \gamma (\nabla ^2 \phi - f) $$
+
+
+first reformulate the system 5-10-18
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

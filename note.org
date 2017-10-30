@@ -1,0 +1,5 @@
+
+** emacs
+
+XFc-x c-e
+m-x eval-buffer
