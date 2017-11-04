@@ -1,0 +1,21 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with <open> and enter text in its buffer.
+
+hi tanya
+
+i plan to go through my research in this outline:
+
+- models:
+1. started with the matched density model (simple, in oerder to get a result at least)
+2. abel 2012 model
+
+- numerical method:
+1. first order projection method
+2. extend it with prediction-correction
+
+if you are avalible next week, I can show you the drafts of the process.
+I'll apporeciate it if you can give me some advice after you read it next week.
+
+
+另：提出一些问题。
+could you give me some code examples of meshing in 3D by Python?
