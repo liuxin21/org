@@ -1,0 +1,7 @@
+;; This buffer is for text that is not saved, and for Lisp evaluation.
+;; To create a file, visit it with <open> and enter text in its buffer.
+
+hi tanya,
+
+thanks for your help.
+After reading the lecture you given and 12 steps, I can solve NS equation in 2d using Matlab and python by myself.

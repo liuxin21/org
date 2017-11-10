@@ -1,0 +1,178 @@
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath:[['$','$']]}});</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+<H1>1 Introduction</H1>
+
+<P>
+We have seen that discretisation of PDE's leads naturally to a matrix equation
+for a vector of unknowns which might represent nodal values of a function,
+local averages of a function or coefficients in an expanion in terms of a set of
+basis functions which generate an approximation space. In most real problems
+the dimension of the coefficient matrix is so large that Gauss elimination is not
+a feasible option, so that an interative method must be used to approximate the
+solution vector. We take as our model problem
+<P></P>
+
+
+
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+{\rm\bf A}{\rm\bf x}={\rm\bf f},
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="77" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img323.png"
+ ALT="$\displaystyle {\rm\bf A}{\rm\bf x}={\rm\bf f},$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(129)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <!-- MATH
+ ${\rm\bf A}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img259.png"
+ ALT="$ {\rm\bf A}$"> is a `non-singular <IMG
+ WIDTH="65" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$ m\times m$"> matrix.
+For any <IMG
+ WIDTH="65" HEIGHT="36" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$ m\times m$"> matrix <!-- MATH
+ ${\rm\bf B}$
+ -->
+<IMG
+ WIDTH="22" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img325.png"
+ ALT="$ {\rm\bf B}$"> we can write
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+{\rm\bf B}{\rm\bf x}+({\rm\bf A}-{\rm\bf B}){\rm\bf x}={\rm\bf f},
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="185" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img326.png"
+ ALT="$\displaystyle {\rm\bf B}{\rm\bf x}+({\rm\bf A}-{\rm\bf B}){\rm\bf x}={\rm\bf f},$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(130)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+so that
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+{\rm\bf x}=({\rm\bf I}-{\rm\bf B}^{-1}{\rm\bf A}){\rm\bf x}+{\rm\bf B}^{-1}{\rm\bf f},
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="237" HEIGHT="45" ALIGN="MIDDLE" BORDER="0"
+ SRC="img327.png"
+ ALT="$\displaystyle {\rm\bf x}=({\rm\bf I}-{\rm\bf B}^{-1}{\rm\bf A}){\rm\bf x}+{\rm\bf B}^{-1}{\rm\bf f},$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(131)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+and we can seek an iterative solution by the algorithm
+<!-- MATH
+ ${\rm\bf x}^{(0)}={\rm\bf0}$
+ -->
+<IMG
+ WIDTH="77" HEIGHT="23" ALIGN="BOTTOM" BORDER="0"
+ SRC="img328.png"
+ ALT="$ {\rm\bf x}^{(0)}={\rm\bf0}$">,
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+{\rm\bf x}^{(k+1)}=({\rm\bf I}-{\rm\bf B}^{-1}{\rm\bf A}){\rm\bf x}^{(k)}+{\rm\bf B}^{-1}{\rm\bf f}.
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="301" HEIGHT="48" ALIGN="MIDDLE" BORDER="0"
+ SRC="img329.png"
+ ALT="$\displaystyle {\rm\bf x}^{(k+1)}=({\rm\bf I}-{\rm\bf B}^{-1}{\rm\bf A}){\rm\bf x}^{(k)}+{\rm\bf B}^{-1}{\rm\bf f}.$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(132)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+We will use the notation
+<P></P>
+<DIV ALIGN="CENTER"><!-- MATH
+ \begin{equation}
+{\rm\bf A}={\rm\bf D}-{\rm\bf E}-{\rm\bf F}={\rm\bf D}({\rm\bf I}-{\rm\bf L}-{\rm\bf U}),
+\end{equation}
+ -->
+<TABLE CELLPADDING="0" WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE">
+<TD NOWRAP ALIGN="CENTER"><IMG
+ WIDTH="299" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img330.png"
+ ALT="$\displaystyle {\rm\bf A}={\rm\bf D}-{\rm\bf E}-{\rm\bf F}={\rm\bf D}({\rm\bf I}-{\rm\bf L}-{\rm\bf U}),$"></TD>
+<TD NOWRAP WIDTH="10" ALIGN="RIGHT">
+(133)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where <!-- MATH
+ ${\rm\bf E}$
+ -->
+<IMG
+ WIDTH="21" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img331.png"
+ ALT="$ {\rm\bf E}$">, <!-- MATH
+ ${\rm\bf L}$
+ -->
+<IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img332.png"
+ ALT="$ {\rm\bf L}$"> are strict lower triangular matrices and <!-- MATH
+ ${\rm\bf F}$
+ -->
+<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img333.png"
+ ALT="$ {\rm\bf F}$">, <!-- MATH
+ ${\rm\bf U}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img80.png"
+ ALT="$ {\rm\bf U}$"> are strict upper
+triangular matrices and <!-- MATH
+ ${\rm\bf D}$
+ -->
+<IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img334.png"
+ ALT="$ {\rm\bf D}$"> is a diagonal matrix.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html183"
+ HREF="node13.html">1 Jacobi iteration</A>
+<LI><A NAME="tex2html184"
+ HREF="node14.html">2 Gauss-Seidel iteration</A>
+<LI><A NAME="tex2html185"
+ HREF="node15.html">3 Relaxation</A>
+<LI><A NAME="tex2html186"
+ HREF="node16.html">4 Some General Theory</A>
+<LI><A NAME="tex2html187"
+ HREF="node17.html">5 Application to a Poisson Equation</A>
+</UL>
+<!--End of Table of Child-Links-->
