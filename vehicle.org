@@ -1,0 +1,37 @@
+* adjust for safety
+** seat
+** head restraints 
+** seatbelts
+** airbags
+** mirrors
+
+* hand controls
+
+** steering wheel
+** ignition switch
+lock: 全关 
+off: ignition 关，steering 开
+acc: ignition 关，electric 开
+on:  ignition 开
+start: engine 开
+** steering wheel
+** ignition switch
+** gearshift lever
+** parking brake
+** turn signal lever
+** lights
+** hazard light switch
+** cruise control
+** wipers and washer control
+** horn
+** heater, defroster, air conditioning control
+
+* foot pedals
+** accelerator
+** brake
+** clutch (standard transmission)
+
+* control panel
+** odometer
+** speedometer
+** seatbelt indicator
