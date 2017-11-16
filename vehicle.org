@@ -35,3 +35,17 @@ start: engine 开
 ** odometer
 ** speedometer
 ** seatbelt indicator
+
+* pre-trip check
+
+
+
+
+
+
+
+
+
+
+
+

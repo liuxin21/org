@@ -1,3 +1,4 @@
+
 ;; This buffer is for text that is not saved, and for Lisp evaluation.
 ;; To create a file, visit it with <open> and enter text in its buffer.
 
@@ -19,3 +20,14 @@ I'll apporeciate it if you can give me some advice after you read it next week.
 
 另：提出一些问题。
 could you give me some code examples of meshing in 3D by Python?
+
+
+I try to run the code of the most simple case in my paper 
+(matched density and viscosity, first derivative in space, the most basic explicit method),
+but I can not get a result.
+
+May you help me to point out what mistakes I made in this code?
+
+Only the code of the simplest case is running, I can solve the complecated cases in my paper.
+
+I'll appreciate it if you can send me an example code of basic two phase flow.

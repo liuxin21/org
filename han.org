@@ -1,0 +1,7 @@
+function spaces
+
+mixed finite element spaces 
+
+inf-sup conditions
+
+fig 2.3: initial config of oreder parameter

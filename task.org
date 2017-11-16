@@ -6,7 +6,7 @@
 ** TODO pro 远程控制
 ** TODO 热力学整理
 ** TODO 第二定律
-** TODO git 控制org
+** DONE git 控制org
 ** TODO Function space (p36)
 ** DONE bilinear forms
 ** DONE Alfred
@@ -16,11 +16,15 @@
 
 ** TODO 把dropbox 第一篇写到主页上 
 
-
+** TODO bc 
+** TODO pressure & pressure graduate
+** TODO 1/2(v+vT)
+** TODO fick's law
 * 长期
 ** TODO 廖 python
 ** TODO Linux
-
+** TODO 336 7 12:30-3:00
+** TODO 352 14 12:30-3:00
 
 
 

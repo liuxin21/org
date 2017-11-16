@@ -1,0 +1,15 @@
+* Outline
+- Python 的 lists 和 functions
+- 基本的 Numpy array 操作
+- 用 matplotlib 画图
+- calling Fortran/C from Python
+- Benchmarking Python performance
+
+* Fluid dynamics
+Discretisation 是最重要的一个过程。
+
+在这个练习中，我们采用 finite difference method 用来计算 
+flow pattern of a fluid in a cavity 的问题。
+
+为了简便，我们假设流体的 viscosity (黏度$\mu$)为 0 。
+也就是说，没有 vortices 
