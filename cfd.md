@@ -51,25 +51,16 @@ $$
     列出 stream function 的 bc (边界条件)
 
     while (convergence 收敛 = FALSE) do
-
         for 每一个除边界外的点 do
-
             取周围四个相邻点的平均值来 update stream function 的值
-
         end do
-
         检查 convergence
-
     end do
 
     for 每一个除边界外的点 do 
-
         计算 $u_x$
-
         计算 $u_y$
-
     end do
-
 
 ## Python
 
@@ -77,7 +68,8 @@ $$
 - How the lists are declared and initialised to zero
 - How the timing works 
 
-
+使用 wget
+cfd-python.tar.gz from the ARCHER
 
 
 
