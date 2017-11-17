@@ -42,7 +42,7 @@ http://wx2.sinaimg.cn/mw690/8db2c8cbgy1flkfcpfv0uj20xk0fwaai.jpg
 
 \begin{equation}
 u_x = \frac{\partial \Psi}{\partial y} = \frac12 
-(\Psi_{i,j+1} - \Psi_{i,j-1}) \n
+(\Psi_{i,j+1} - \Psi_{i,j-1}) \\
 
 u_y = \frac{\partial \Psi}{\partial x} = \frac12 
 (\Psi_{i+1,j} - \Psi_{i-1,j})
@@ -50,7 +50,6 @@ u_y = \frac{\partial \Psi}{\partial x} = \frac12
 
 ** 算法 outline
 
-#+BEGIN_SRC
 列出 stream function 的 bc (边界条件)
 
 while (convergence 收敛 = FALSE) do
@@ -72,12 +71,6 @@ for 每一个除边界外的点 do
     计算 $u_y$
 
 end do
-#+END_SRC
-
-为了简便，我们采用固定的数来迭代，而不是判断收敛。
-实际的操作中我们可以采用上面的方法，直到达到预期的accuracy。
-
-* 使用 Python
 
 
 
