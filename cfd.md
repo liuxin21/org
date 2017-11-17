@@ -43,7 +43,7 @@ $$
 u_x = \frac{\partial \Psi}{\partial y} = \frac12 
 (\Psi_{i,j+1} - \Psi_{i,j-1}) , \ \ \ 
 u_y = \frac{\partial \Psi}{\partial x} = \frac12 
-(\Psi_{i+1,j} - \Psi_{i-1,j})
+(\Psi_{i+1,j} - \Psi_{i-1,j}),
 $$
 
 ## 算法 outline
