@@ -73,7 +73,9 @@ cfd-python 文件下有两个文件夹：
 - verfiy:
 
 ## 运行和验证
-cd到 python 文件夹，运行 cfd.py
+cd到 python 文件夹，运行 cfd.py:
+
+`87$ python cfd.py 1 1000`
 
 cfd.py 1 1000
 注意后面的 “1 1000”，意思是 scalefactor of 1 and 1000 Jacobi_iteration steps. 
@@ -84,7 +86,26 @@ cfd.py 1 1000
 
 运行的结果如下：
 
+    2D CFD Simulation
+    =================
+    Scale factor = 1
+    Iterations   = 1000
+
+    Grid size = 32 x 32
+
+    Starting main Jacobi loop ...
+
+    completed iteration 1000
+
+    ... finished
+
+    Calculation took 0.81351s
+
+这个 program 同时生成了一个叫 velocity.dat 的文件，里面包含了每一个 grid point 的速度。
+
+另外一个文件夹 verify 里有正确答案 cfd_velocity_1_1000.dat ， 可以利用下面的代码来验证你的结果：
 
 
+`$ diff velocity.dat ../verify/cfd_velocity_1_1000.dat`
 
 
