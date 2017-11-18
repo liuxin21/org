@@ -105,7 +105,6 @@ cfd.py 1 1000
 
 另外一个文件夹 verify 里有正确答案 cfd_velocity_1_1000.dat ， 可以利用下面的代码来验证你的结果：
 
-
 `$ diff velocity.dat ../verify/cfd_velocity_1_1000.dat`
 
 
