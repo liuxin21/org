@@ -68,10 +68,12 @@ $$
 - How the lists are declared and initialised to zero
 - How the timing works 
 
-使用 wget
-cfd-python.tar.gz from the ARCHER
+cfd-python 文件下有两个文件夹：
+- python：
+- verfiy:
 
-
+## 运行和验证
+cd到 python 文件夹，运行 cfd.py
 
 
 
