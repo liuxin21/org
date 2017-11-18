@@ -76,7 +76,15 @@ cfd-python 文件下有两个文件夹：
 cd到 python 文件夹，运行 cfd.py
 
 cfd.py 1 1000
-注意后面的 “1 1000”，意思是 scalefactor of 1 and 1000 Jacobi_iteration steps. 这里的 **scalefactor** 决定了 the size of the simulation, (1 相当于 32x32 gris, 2 相当于 64x64 gris, 以此类推)。
-**interation steps** 是指在 Jacobi algorithm 中迭代的次数。
+注意后面的 “1 1000”，意思是 scalefactor of 1 and 1000 Jacobi_iteration steps. 
+
+- **scalefactor** 决定了 the size of the simulation (1 相当于 32x32 gris, 2 相当于 64x64 gris, 以此类推)。
+
+- **interation steps** 是指在 Jacobi algorithm 中迭代的次数。(对于比较大的 girds, 你需要更多的 interation steps 来 converge)。
+
+运行的结果如下：
+
+
+
 
 
