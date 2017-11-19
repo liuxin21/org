@@ -113,3 +113,7 @@ cfd.py 1 1000
 `$ diff velocity.dat ../verify/cfd_velocity_1_1000.dat`
 
 
+## numpy
+
+把文件中的 psi 和 tmp 两个 list 改成 numpy arrays.
+
