@@ -68,9 +68,14 @@ $$
 - How the lists are declared and initialised to zero
 - How the timing works 
 
-cfd-python 文件下有两个文件夹：
-- python：
-- verfiy:
+cfd-python 文件下有三个文件夹：
+- doc : Contains this exercise document
+- code：
+    - python: Contains the basic Python version of the source code (**cfd.py, jacobi.py**) , plotting utilities (**util.py, [plot_flow.py]()**) and source code for the extra exercises
+    - verify: Contains output files to verify your results against 
+- solutions: Contains subdirectories of various solution programs
+**[numpy_loops, numpy_index, scipy, fortran, c_f2py]()**
+
 
 ## 运行和验证
 cd到 python 文件夹，运行 cfd.py:
