@@ -117,3 +117,9 @@ cfd.py 1 1000
 
 把文件中的 psi 和 tmp 两个 list 改成 numpy arrays.
 
+先
+`psi = [[0 for col in range(n+2)] for row in range(m+2)]`
+
+可改为：
+
+`psi = np.zeros((m+2, n+2))`
