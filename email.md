@@ -1,7 +1,3 @@
-
-;; This buffer is for text that is not saved, and for Lisp evaluation.
-;; To create a file, visit it with <open> and enter text in its buffer.
-
 hi tanya
 
 i plan to go through my research in this outline:
@@ -31,3 +27,14 @@ May you help me to point out what mistakes I made in this code?
 Only the code of the simplest case is running, I can solve the complecated cases in my paper.
 
 I'll appreciate it if you can send me an example code of basic two phase flow.
+
+## re
+
+I fixed the phi, so phi will not blow up quite significantly.
+
+As for the mistakes you pointed out last time:
+
+3. I didn't find some wrong with the Neumann bc
+
+4. pressure correction is usually only done once, you don't need to make a for loop. But in the lecture you gave me last time, he uses for it=1:maxit to slove pressure.
+
