@@ -38,3 +38,4 @@ As for the mistakes you pointed out last time:
 
 4. pressure correction is usually only done once, you don't need to make a for loop. But in the lecture you gave me last time, he uses for it=1:maxit to slove pressure.
 
+Do you have any other advice? like, will it be easy to use 三对角方程组，托马斯算法，Crank-Nicolson ?
