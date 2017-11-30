@@ -110,3 +110,4 @@ N is the number of unknowns.
     #compare against numpy linear algebra library
     print np.linalg.solve(A, d)
     >> [ 0.14877589  0.75612053 -1.00188324  2.25141243]
+    
