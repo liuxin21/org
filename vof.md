@@ -1,0 +1,1 @@
+Volume- of-Fluid (VoF) based CFD techniques have been used by researchers to model droplet-film impacts by applying an extremely fine computational mesh to resolve the flow around the droplets and the film. Such methods, because of the computing cost are, however, not practical for applications of interest in this work.
